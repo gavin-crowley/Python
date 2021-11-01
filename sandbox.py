@@ -1,8 +1,29 @@
-three_nums = input("Enter three nums: ")
 
-n1, n2, n3 = tuple(three_nums)
+# n = float(input("Enter: "))
 
-if(n1 == n2 == n3):
-    print((n1 + n2 + n3)*3)
-else:
-    print(n1 + n2 + n3)
+# def fn(n):
+#     return
+
+# fn(n)
+
+
+# def fn(n):
+#     return
+
+# fn(n)
+
+def substring_copy(str, n):
+    flen = 2
+    if flen > len(str):
+        flen = len(str)
+    substr = str[:flen]
+
+    result = ""
+    for i in range(n):
+        result = result + substr
+    return result
+
+
+print(substring_copy('abcdef', 2))
+print(substring_copy('p', 3))
+print(substring_copy('pethujkol', 7))
