@@ -12,18 +12,32 @@
 
 # fn(n)
 
-# def substring_copy(str, n):
-#     flen = 2
-#     if flen > len(str):
-#         flen = len(str)
-#     substr = str[:flen]
 
-#     result = ""
-#     for i in range(n):
-#         result = result + substr
-#     return result
+# def numbers_to_strings(argument):
+#     switcher = {
+#         0: "zero",
+#         1: "one",
+#         2: "two",
+#     }
+
+#     return switcher.get(argument, "nothing")
 
 
-# print(substring_copy('abcdef', 2))
-# print(substring_copy('p', 3))
-# print(substring_copy('pethujkol', 7))
+# print(numbers_to_strings(0))
+
+def numbers_to_strings(argument):
+    switcher = {
+        1: "Mercury",
+        2: "Venus",
+        3: "Earth",
+        4: "Mars",
+        5: "Jupiter",
+        6: "Saturn",
+        7: "Uranus",  
+        8: "Neptune"
+    }
+    
+    return switcher.get(argument, "nothing")
+
+
+print(numbers_to_strings(3))
