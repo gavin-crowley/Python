@@ -25,19 +25,10 @@
 
 # print(numbers_to_strings(0))
 
-def numbers_to_strings(argument):
-    switcher = {
-        1: "Mercury",
-        2: "Venus",
-        3: "Earth",
-        4: "Mars",
-        5: "Jupiter",
-        6: "Saturn",
-        7: "Uranus",  
-        8: "Neptune"
-    }
+arr = [1, 2, 2]
+
+total = 0
+for num in arr:
+    total += num**2
     
-    return switcher.get(argument, "nothing")
-
-
-print(numbers_to_strings(3))
+print(total)
