@@ -32,3 +32,19 @@ dinner_peeps.insert(0, 'Gandhi')
 dinner_peeps.insert(2, 'Cobain')
 dinner_peeps.append('Courtney')
 dinner_peeps
+
+#7
+print("Sorry, only two people can come!")
+dinner_peeps.pop()
+dinner_peeps.pop()
+dinner_peeps.pop()
+dinner_peeps.pop()
+dinner_peeps
+
+print(f"Hey guys!, I can only accommodate {dinner_peeps[0]} and {dinner_peeps[1]}")
+
+del dinner_peeps[0]
+del dinner_peeps[1]
+
+print(dinner_peeps)
+
