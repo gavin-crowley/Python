@@ -44,7 +44,34 @@ dinner_peeps
 print(f"Hey guys!, I can only accommodate {dinner_peeps[0]} and {dinner_peeps[1]}")
 
 del dinner_peeps[0]
-del dinner_peeps[1]
+#del dinner_peeps[1]
 
 print(dinner_peeps)
+
+#8
+places = ['Iceland', 'Faroes', 'Norway', 'Sweden', 'Finland']
+places
+print(places)
+print(sorted(places))
+print(places)
+print(sorted(places, reverse=True))
+places
+places.reverse()
+places
+places.reverse()
+places
+places.sort()
+places
+places.sort(reverse=True)
+places
+
+
+#9
+print(len(dinner_peeps))
+
+
+
+
+
+
 
