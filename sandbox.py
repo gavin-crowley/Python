@@ -1,34 +1,15 @@
+# current_number = 1
+# while current_number <= 5:
+#     print(current_number)
+#     current_number += 1
 
-# n = float(input("Enter: "))
+prompt = "\nWhat topping would you like on your pizza? "
+prompt += "\nEnter 'quit' when you are finished: "
 
-# def fn(n):
-#     return
+while True:
+    topping = input(prompt)
+    if topping != 'quit':
+        print(f"I'll add {topping} to your pizza.")
+    else:
+        break
 
-# fn(n)
-
-
-# def fn(n):
-#     return
-
-# fn(n)
-
-
-# def numbers_to_strings(argument):
-#     switcher = {
-#         0: "zero",
-#         1: "one",
-#         2: "two",
-#     }
-
-#     return switcher.get(argument, "nothing")
-
-
-# print(numbers_to_strings(0))
-
-arr = [1, 2, 2]
-
-total = 0
-for num in arr:
-    total += num**2
-    
-print(total)
