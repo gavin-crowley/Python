@@ -58,7 +58,34 @@ phillipino = Restaurant('Thousand Islands', 'Phillipino')
 phillipino.describe_restaurant()
 
 
+#3
 
+class User:
+    def __init__(self, first_name, last_name):
+        self.first_name = first_name
+        self.last_name = last_name
+    
+    def describe_user(self):
+        print(f"Name is {self.first_name.title()} {self.last_name.title()}")
+
+    def greet_user(self):
+        print(f"Merry xmas {self.first_name} {self.last_name}")
+
+i1 = User('tom', 'thumb')
+i2 = User('mary', 'gregory')
+i3 = User('alan', 'alda')
+
+print(i1)
+i1.describe_user()
+i1.greet_user()
+
+print(i2)
+i2.describe_user()
+i2.greet_user()
+
+print(i3)
+i3.describe_user()
+i3.greet_user()
 
 
 
