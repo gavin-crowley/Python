@@ -4,7 +4,7 @@
 # kebab-case
 # camelCase
 # PascalCase
-# snake-case
+# snake_case
 
 # Which punctuation symbol should be used to combine strings and numbers in a print statement?
 # Ans: ,
