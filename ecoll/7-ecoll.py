@@ -36,6 +36,13 @@
 # string2[::2] skips every second
 
 
+my_string = 'abcdef'
+
+print(my_string[:-1]) # abcde
+print(my_string[::-1]) # fedcba
+print(my_string[::2]) # ace
+
+
 
 # print(type(float(c))) => <class 'float'>
 
