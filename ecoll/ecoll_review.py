@@ -181,6 +181,124 @@ print(y)
 
 
 
+students = [["M","T"], ["B","B"], ["L","C"], ["J","D"], ["T","E"]]
+import csv
+with open("students.csv", "w", newline="") as f:
+    writer = csv.writer(f)
+    writer.writerows(students)
+
+
+
+
+measurements = [23.0, .0056, .023]
+print(",".join("%.2f" % f for f in measurements)) #23.00,0.01,0.02
+
+print(",".join("%.4d" % f for f in measurements)) # 0023,0000,0000 -> 0 padding on left
+
+#  %s acts a placeholder for a string while %d acts as a placeholder for a number
+
+
+a = 45
+b = 45
+print(a is not b) #False
+
+a = 'Test'
+b = 'Test'
+print(a is b) # True
+
+test1 = "This is a test"
+test2 = 'This is a test'.upper()
+print(test1 is test2) # False
+
+print('h' in "Python") # True
+
+print('is' in 'ThIS a test') # False , in is case sensitive
+
+
+colors = ('red', 'green', 'blue')
+more_colors = ('red', 'green', 'blue')
+extra_colors = more_colors
+print(colors is extra_colors) # True
+print(colors is more_colors) # True
+print(more_colors is extra_colors) # True
+# print(colors is in extra_colors) # Error
+
+
+a = [1,2,3]
+b = [1,2,3]
+
+print(a == b) #True 
+print(a is b) #False
+
+colors = ['red', 'green', 'blue']
+more_colors = ['red', 'green', 'blue']
+extra_colors = more_colors
+print(colors is extra_colors) # False
+print(colors is more_colors) # False
+print(more_colors is extra_colors) # True
+
+
+
+
+
+amount = 325154.5687
+print("{:,.2f}".format(amount)) #325,154.57
+
+
+
+
+
+def my_list(a, L=[]):
+    L.append(a)
+    return L
+
+my_list("eggs")
+my_list("milk")
+print(my_list("steak")) #['eggs', 'milk', 'steak']
+
+
+
+
+
+v = bool([False])
+x = bool(3)
+y = bool("")
+z = bool(' ')
+print(v, x, y, z) #True True False True
+
+
+
+
+x = 10
+y = 6
+z = y//3*3/2+x%2**2
+print(z) # 5.0
+
+
+
+#Custom exception
+class MyException(Exception):
+    pass
+
+
+
+x = range(6) # 0,1,2,3,4,5
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
