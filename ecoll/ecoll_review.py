@@ -286,6 +286,110 @@ x = range(6) # 0,1,2,3,4,5
 
 
 
+numList = [0,1,2,3,4]
+print(5 in numList) #False
+
+
+
+
+
+print(2234223.45//234) # 9547.0
+print(float(2234223.45//234)) # 9547.0
+
+
+
+
+
+alph = "abcdefghijklmnopqrstuvwxyz"
+
+print(alph[3:15]) # defghijklmno
+print(alph[3:15:3]) # dgjm 
+print(alph[3:15:-3])
+print(alph[15:3:-3]) # pmjg 
+print(alph[15:3])
+
+
+
+
+print(0 or 5) #5 
+print(bool(0)) #False
+print(None is None) #True
+print(-5 < 0 < 5) #True
+
+
+
+
+print(type(eval("3"))) # class int
+print(type(eval("3") - eval("2"))) # class int
+
+
+
+
+colors = [9,8,7,6,5,4,3,2,]
+print(colors[1::2]) # [8, 6, 4, 2]
+
+
+
+
+#Q25
+from random import randint
+target = randint(1,10)
+chance = 1
+print("Guess from 1 to 10 in 3 chances.")
+while chance <= 3:
+    guess = int(input("Guess an integer: "))
+    
+
+
+
+
+from random import randrange
+print(randrange(0,100,5)) #90
+
+
+
+
+
+import random
+print(random.randrange(0.0,1.0)) #0
+print(random.randint(0,1)) #1
+print(random.random()) # 0.823424 CORRECT
+# print(random.randrange()) #Error
+
+
+
+
+
+
+def read_file(file):
+    line = None
+    if os.path.isfile(file):
+        data = open(file,'r')
+        for line in data:
+            print(line)
+
+
+
+
+
+
+import datetime
+d = datetime.datetime(2017, 4, 7)
+print('{:%B-%d-%y}'.format(d))
+num = 1234567.890
+print('{:,.4f}'.format(num))
+# April-07-17
+# 1,234,567.8900
+
+
+
+
+print(4//6) #0
+
+
+
+
+
 
 
 
