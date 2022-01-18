@@ -212,7 +212,7 @@ print(test1 is test2) # False
 
 print('h' in "Python") # True
 
-print('is' in 'ThIS a test') # False , in is case sensitive
+print('is' in 'This IS a test') # True , in is case sensitive
 
 
 colors = ('red', 'green', 'blue')
@@ -271,7 +271,7 @@ print(v, x, y, z) #True True False True
 
 x = 10
 y = 6
-z = y//3*3/2+x%2**2
+z = y // 3 * 3 / 2 + x % 2 ** 2
 print(z) # 5.0
 
 
