@@ -12,9 +12,9 @@ print("{:%A, %m %Y}".format(today))
 
 
 
-# A is day word
-# b is month word
-
+# A day word
+# B month word
+# b month word short
 
 # f microsecond number
 # I hour number from 12‑hour clock
@@ -23,3 +23,6 @@ print("{:%A, %m %Y}".format(today))
 # j day number of the year from 000 to 366
 # m month number
 # Y year number
+# y year number short
+
+# c date and time appropriate for locale

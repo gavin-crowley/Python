@@ -302,13 +302,62 @@ print(4//6) #0
 # x = open('python.csv', 'w')
 # Ans: [Opens or creates a text file to write]
 
+# Character   Meaning
+# 'r'     open for reading (default)
+# 'w'     open for writing, truncating the file first
+# 'x'     open for exclusive creation, failing if the file already exists
+# 'a'     open for writing, appending to the end of the file if it exists
+# 'b'     binary mode
+# 't'     text mode (default)
+# '+'     open a disk file for updating (reading and writing)
+# 'U'     universal newlines mode (deprecated)
 
 
 
 
+# To remember the difference between strftime and strptime, think of the " f " in strftime as "format" 
+# and think of the " p " in strptime as "parse" as in convert.  For the statement, then, the two functions 
+# just need to be reversed.
+
+
+# In error handling, the else clause is indeed optional.  
+# If it is used, it must come right after the except clause. 
+
+
+# The break keyword exists a loop.  
+# The while keyword starts a loop.  
+# The continue keyword skips a turn in a loop.  
+# The pass keyword is used as a placeholder.  
+# It is commonly used as part of an if/elif/else statement to where one condition 
+# temporarily does not need any action taken.  
+# It is also used as a placeholder for the body of a function during development. 
+
+
+# 5 and a maximum value of 11
+#  random.randint(5, 11), random.randrange(5, 12, 1)
+
+
+#When converting b to an integer, b == 5.  When converting d to an integer, d == 7. 
+# Thus, a == int(b) and c == int(d).  Remember that the integer conversion function
+# drops everything after the decimal point on a number. 
+
+
+x = round(5.76543, 2)
+print(x)
+
+
+range(1,6) # 1,2,3,4,5
+
+
+x,y = input() # is not a valid statement in Python. 
+# We CANNOT input() a list of elements using a single input() function.  
 
 
 
+
+# The try block lets you test a block of code for errors. 
+# The except block lets you handle the error. 
+# The else block lets you execute code when there is no error.
 
 
 

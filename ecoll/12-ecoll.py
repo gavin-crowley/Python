@@ -25,6 +25,7 @@ else:
 
 
 
+
 # print(datetime.today().strftime('%A')  # [Displays the full weekday name]
 # print(datetime.today().strftime('%B')  # [Displays the full month name]
 # print(datetime.today().strftime('%d'))  # [Displays the day of the month number (from 01 to 31)]
