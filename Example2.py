@@ -1,6 +1,7 @@
 """
 Comment 1
 """
+# comment
 
 __author__ = "Gav"
 __copyright__ = "Copy"
