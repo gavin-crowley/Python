@@ -9,8 +9,8 @@ def binary_search(list, item):
         mid = (low + high) // 2
         guess = list[mid]
         if guess == item:
-            # return mid
             print(f"It took {counter} cycles of the loop")
+            return mid
         if guess > item:
             high = mid - 1
         else:
@@ -31,14 +31,15 @@ def linear_search(list, item):
 my_list = [1, 3, 5, 7, 9]
 
 
-# binary_search(my_list, 1)
-# binary_search(my_list, 3)
-# binary_search(my_list, 5)
-# binary_search(my_list, 7)
-# binary_search(my_list, 9)
 
-linear_search(my_list, 1)
-linear_search(my_list, 3)
-linear_search(my_list, 5)
-linear_search(my_list, 7)
-linear_search(my_list, 9)
+binary_search(my_list, 1)
+binary_search(my_list, 3)
+binary_search(my_list, 5)
+binary_search(my_list, 7)
+binary_search(my_list, 9)
+
+# linear_search(my_list, 1)
+# linear_search(my_list, 3)
+# linear_search(my_list, 5)
+# linear_search(my_list, 7)
+# linear_search(my_list, 9)
