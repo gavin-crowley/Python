@@ -1,6 +1,6 @@
 # built-in functions
 # list methods
-
+# dictionary methods
 
 # Challenge 1 - Variables
 
@@ -72,43 +72,43 @@
 
 # Find the solutions using this list
 
-birds = ["robin", "bluebird", "sparrow", "cardinal"]
+# birds = ["robin", "bluebird", "sparrow", "cardinal"]
 
 
-# 1. Save "bluebird" in a variable
+# # 1. Save "bluebird" in a variable
 
-# WORK OUT YOUR SOLUTION HERE
-bb = birds[1]
-print(bb)
+# # WORK OUT YOUR SOLUTION HERE
+# bb = birds[1]
+# print(bb)
 
-# 2. Save "cardinal" in a variable
+# # 2. Save "cardinal" in a variable
 
-# WORK OUT YOUR SOLUTION HERE
-card = birds[-1]
-print(card)
+# # WORK OUT YOUR SOLUTION HERE
+# card = birds[-1]
+# print(card)
 
-# 3. Insert "woodpecker" directly behind sparrow in the list
+# # 3. Insert "woodpecker" directly behind sparrow in the list
 
-# WORK OUT YOUR SOLUTION HERE
-birds.insert(2,'woodpecker')
-print(birds)
+# # WORK OUT YOUR SOLUTION HERE
+# birds.insert(2,'woodpecker')
+# print(birds)
 
-# 4. Reverse the birds list and print it out
+# # 4. Reverse the birds list and print it out
 
-# WORK OUT YOUR SOLUTION HERE
-birds.reverse()
-print(birds)
+# # WORK OUT YOUR SOLUTION HERE
+# birds.reverse()
+# print(birds)
 
-# 5. Save the first two birds only into a new variable called two_birds
+# # 5. Save the first two birds only into a new variable called two_birds
 
-# WORK OUT YOUR SOLUTION HERE
-two_birds = birds[:2]
-print(two_birds)
-# 6. Print ["sparrow", "cardinal"] using negative indices
+# # WORK OUT YOUR SOLUTION HERE
+# two_birds = birds[:2]
+# print(two_birds)
+# # 6. Print ["sparrow", "cardinal"] using negative indices
 
-# WORK OUT YOUR SOLUTION HERE
-print(two_birds[-1])
-print(two_birds[-2])
+# # WORK OUT YOUR SOLUTION HERE
+# print(two_birds[-1])
+# print(two_birds[-2])
 
 
 
@@ -125,12 +125,22 @@ print(two_birds[-2])
 #    Note that it should not say item but the name of the fruit. So 'steak is not a fruit', 'apple is a fruit', etc. 
 
 # WORK OUT YOUR SOLUTION HERE
+# for item in items:
+#     if item == 'apple' or item == 'pineapple':
+#       print("item is a fruit")
+#     else:
+#        print("item is not a fruit")
+
 
 
 # 2. Write a while loop starting with a counter = 1 that multiplies two to your counter, prints the counter, but breaks the loop after the counter reaches 1000. 
 
 # WORK OUT YOUR SOLUTION HERE
+# counter = 1
 
+# while counter <= 1000:
+#   print(counter)
+#   counter = counter + 1
 
 
 
@@ -144,8 +154,14 @@ print(two_birds[-2])
 
 # WORK OUT YOUR SOLUTION HERE
 
+# def list_num_transform(nums):
+#     new_list = []
+#     for num in nums:
+#       if num < 10:
+#          new_list.append(num)
+#     print(new_list)
 
-
+# list_num_transform([1,12,3])
 
 # 6. Dictionaries
 
@@ -162,16 +178,20 @@ print(two_birds[-2])
 # 1. Loop through dictionary and print all the values (values only)
 
 # WORK OUT YOUR SOLUTION HERE
-
+# for vals in college.values():
+#     print(vals)
 
 # 2. Loop through dictionary and print all the keys and values
 
 # WORK OUT YOUR SOLUTION HERE
+# for items in college.items():
+#     print(items)
 
 
 # 3. Print the "founded" year of the college
 
 # WORK OUT YOUR SOLUTION HERE
+# print(college['founded'])
 
 
 
@@ -183,6 +203,32 @@ print(two_birds[-2])
 # 3. If the password doesn't meet all four conditions, then reject with the conditions they still need to meet.
 # 4. Only accept if all four conditions are met.
 # 5. Add a condition to check that password length is greater than 9 digits. If 9 or less, it fails.
+
+
+# pw = input("Please enter password: ")
+
+pw = 'OIw'
+pwl = list(pw.strip(''))
+# print(pwl)
+
+
+for letter in pwl:
+ if letter.islower() or letter.isupper():
+    print("Accepted")
+
+
+# and not pw.isalnum()
+
+
+
+
+
+
+
+
+
+
+
 
 # Hints/Suggestions:
 # - Break password into list of letters and loop through to check type (upper, lower, etc.). Check out
