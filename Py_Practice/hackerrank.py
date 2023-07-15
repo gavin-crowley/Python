@@ -41,3 +41,39 @@
 #     print(i, end="")
 # # 12345
 
+# n = 5
+# arr = [2,3,6,6,5]
+# print(arr)
+# arr_unique = list(dict.fromkeys(arr))
+# print(arr_unique)
+# arr_unique.sort()
+# print(arr_unique)
+# print(arr_unique[-2])
+
+
+
+# https://www.hackerrank.com/challenges/nested-list/problem?isFullScreen=true
+
+# students = [['Harry', 37.21], ['Berry', 37.21], ['Tina', 37.2], ['Akriti', 41], ['Harsh', 39]]
+# students.sort(key=lambda l: l[1])
+# print(students)
+
+# def secondLowestMarks(students):
+#     lowest_mark = min(students, key = lambda stu: stu[1])[1];
+#     students = [stu for stu in students if stu[1] != lowest_mark]
+#     #filter(lambda stu: stu[1] == lowest_mark, students);
+#     second_lowest_mark = min(students, key = lambda stu: stu[1])[1];
+#     return sorted([stu[0] for stu in students if stu[1] == second_lowest_mark]);
+
+# def secondLowestMarks2(students):
+#     "If there's a tie for lowest mark we include all."
+#     students.sort();
+#     picked_students = sorted(filter(lambda x: x[1] == students[1][1], students));
+#     return [stu[0] for stu in picked_students];
+
+# if __name__ == "__main__":
+#     num_students = int(input());
+#     students = [[input(),float(input())] for i in range(num_students)];
+#     for student in secondLowestMarks(students):
+#         print(student);
+        
