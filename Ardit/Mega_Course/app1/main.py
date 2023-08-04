@@ -27,8 +27,21 @@
 # print(todos)
 #
 # print(type(todo1))
+#
+# book_title = input("Enter title: ")
+# print('Title length is', len(book_title))
 
-book_title = input("Enter title: ")
-print('Title length is', len(book_title))
+# 1
+# my_str_var = 'Friday!'
+# print(type(my_str_var))
 
+# 2
+# user_input = input("Enter a string: ")
+# print(user_input)
 
+# 3
+# my_list = ['a', 'b', 'c', 'd']
+
+greeting1 = "Hi"
+greeting2 = "Hello  f"
+print(greeting2)
