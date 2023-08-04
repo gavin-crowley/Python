@@ -4,7 +4,7 @@
 # while user_input != 'done':
 #     user_input = input("Enter a todo: ")
 #     print(user_input)
-#
+
 # input_status = ''
 # user_input = ''
 # todo_list = []
@@ -16,6 +16,7 @@
 #         todo_list.append(user_input)
 #
 # print(todo_list)
+
 
 
 # user_prompt = "Enter a todo:"
@@ -42,6 +43,17 @@
 # 3
 # my_list = ['a', 'b', 'c', 'd']
 
-greeting1 = "Hi"
-greeting2 = "Hello  f"
-print(greeting2)
+# 1
+# user_prompt = input("Enter your name once: ")
+# print(user_prompt.capitalize())
+
+# 2
+# user_prompt = input("Enter your name once: ")
+# while True:
+#     print(user_prompt.capitalize())
+
+# 3
+# name = ''
+# while True:
+#     name = input("Enter your name: ")
+#     print(name.capitalize())
