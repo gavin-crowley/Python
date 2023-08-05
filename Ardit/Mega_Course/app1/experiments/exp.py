@@ -33,3 +33,11 @@
 #     new_filenames.append(new_item)
 #
 # print(new_filenames)
+
+# --------------
+# waiting_list = ['sen', 'ben', 'john']
+# waiting_list.sort()
+#
+# for index, item in enumerate(waiting_list, 1):
+#     print(f"{index}.{item.capitalize()}")
+

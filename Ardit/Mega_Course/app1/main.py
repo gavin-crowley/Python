@@ -161,7 +161,48 @@
 # name = input("Enter a name: ")
 # print(ranking.index(name)+1)
 
-elements = ['a', 'b', 'c']
-new = 'x'
-elements[1] = new
-print(elements)
+# ----------
+
+# Day 5
+
+todos = ['clean', 'cook', 'wash']
+# todos = []
+
+while True:
+    user_action = input("Type add, show, edit, complete or exit: ")
+    user_action = user_action.strip()
+
+    match user_action:
+        case 'add':
+            todo = input("Enter a todo: ")
+            todos.append(todo)
+        case 'show':
+            for i, item in enumerate(todos, 1):
+                print(f"{i}.{item}")
+        case 'edit':
+            todo_number = int(input("Enter the number of todo: "))
+            updated_todo = input("Enter the new todo: ")
+            todos[todo_number-1] = updated_todo
+        case 'complete':
+            todo_num_comp = int(input("Number of completed todo: "))
+            todos.pop(todo_num_comp - 1)
+            print(f"Todo number {todo_num_comp} deleted!")
+        case 'exit':
+            break
+
+print("bye!")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
