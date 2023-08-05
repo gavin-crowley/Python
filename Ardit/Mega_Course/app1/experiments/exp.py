@@ -22,3 +22,14 @@
 # while i <= 10:
 #     print(i)
 #     i += 1
+
+# ------------
+#
+# filenames = ["1.Raw", "2.Report"]
+# new_filenames = []
+#
+# for item in filenames:
+#     new_item = item.replace('.','-')
+#     new_filenames.append(new_item)
+#
+# print(new_filenames)

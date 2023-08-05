@@ -57,3 +57,111 @@
 # while True:
 #     name = input("Enter your name: ")
 #     print(name.capitalize())
+
+# DAY 3
+#
+# todos = []
+#
+# while True:
+#     user_action = input("Type add, show, or exit: ")
+#     user_action = user_action.strip()
+#
+#     match user_action:
+#         case 'add':
+#             todo = input("Enter a todo: ")
+#             todos.append(todo)
+#         case 'show' | 'display':
+#             for item in todos:
+#                 print(item)
+#         case 'exit':
+#             break
+#         case _:
+#             print("Unknown command")
+#
+# print("bye!")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# 1
+# country = []
+#
+# while True:
+#     user_input = input("Enter the country you are from: ")
+#
+#     match user_input:
+#         case 'USA':
+#             print("Hello")
+#         case 'India':
+#             print("Namaste")
+#         case 'Germany':
+#             print("Hallo")
+#         case 'exit':
+#             break
+#         case _:
+#             print("Enter a different country")
+# print("bye!")
+
+# 2
+#
+# ingredients = ["john smith", "sen plakay", "dora ngacely"]
+#
+# for item in ingredients:
+#     print(item.title())
+
+
+# Day 4
+
+# todos = ['clean', 'run']
+#
+# while True:
+#     user_action = input("Type add, show, edit or exit: ")
+#     user_action = user_action.strip()
+#
+#     match user_action:
+#         case 'add':
+#             todo = input("Enter a todo: ")
+#             todos.append(todo)
+#         case 'show':
+#             for item in todos:
+#                 print(item)
+#         case 'edit':
+#             todo_number = int(input("Enter the number of todo: "))
+#             updated_todo = input("Enter the new todo: ")
+#             todos[todo_number-1] = updated_todo
+#         case 'exit':
+#             break
+#
+# print("bye!")
+
+# 1
+# exchange_rate = 0.95
+# amount = float(input("How many dollars have you got? "))
+# print("The amount in euros is:\n", amount * exchange_rate)
+
+# 2
+# ranking = ['John', 'Sen', 'Lisa']
+# rank_number = int(input("Enter rank number: "))
+# print(ranking[rank_number-1])
+
+# 3
+# ranking = ['John', 'Sen', 'Lisa']
+# name = input("Enter a name: ")
+# print(ranking.index(name)+1)
+
+elements = ['a', 'b', 'c']
+new = 'x'
+elements[1] = new
+print(elements)
