@@ -52,11 +52,49 @@
 #     file.close()
 
 # ------------------
+# 5
+#
+# filenames = ['a.txt', 'b.txt', 'c.txt']
+#
+# for filename in filenames:
+#     file = open(f"../files/{filename}", 'r')
+#     content = file.read()
+#     file.close()
+#     print(content)
 
-filenames = ['a.txt', 'b.txt', 'c.txt']
+################### DAY 7
 
-for filename in filenames:
-    file = open(f"../files/{filename}", 'r')
-    content = file.read()
-    file.close()
-    print(content)
+# 1
+# names = ["john smith", "jay santi", "eva kuki"]
+# names = [name.title() for name in names]
+# print(names)
+
+# 2
+# usernames = ["john 1990", "alberta1970", "magnola2000"]
+# usernames_count = [len(username) for username in usernames]
+# print(usernames_count)
+
+# 3
+# user_entries = ['10', '19.1', '20']
+# user_entries = [float(item) for item in user_entries]
+# print(user_entries)
+
+# 4
+# user_entries = ['10', '19.1', '20']
+#
+# summ = sum([float(item) for item in user_entries])
+# print(summ)
+
+# ------------
+# temperatures = [10, 12, 14]
+# temperatures = [str(i) + '\n' for i in temperatures]
+# print(temperatures)
+# file = open("file.txt", 'w')
+#
+# file.writelines(temperatures)
+
+# --------------
+
+
+
+

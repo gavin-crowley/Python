@@ -49,3 +49,10 @@
 # for content, filename in zip(contents, filenames):
 #     file = open(f"../files/{filename}", 'w')
 #     file.write(content)
+
+########### DAY 7
+
+# filenames = ['a.blah', 'b.blah', 'c.blah']
+# new_names = [name.replace('.', '-') + '.txt' for name in filenames]
+# print(new_names)
+

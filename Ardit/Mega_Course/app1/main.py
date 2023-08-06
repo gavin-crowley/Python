@@ -165,8 +165,44 @@
 
 # Day 5 / 6
 
-# todos = ['clean', 'cook', 'wash']
-todos = []
+# while True:
+#     user_action = input("Type add, show, edit, complete or exit: ")
+#     user_action = user_action.strip()
+#
+#     match user_action:
+#         case 'add':
+#             todo = input("Enter a todo: ") + '\n'
+#
+#             file = open('files/todos.txt', 'r')
+#             todos = file.readlines()
+#             file.close()
+#
+#             todos.append(todo)
+#
+#             file = open('files/todos.txt', 'w')
+#             file.writelines(todos)
+#             file.close()
+#         case 'show':
+#             file = open('files/todos.txt', 'r')
+#             todos = file.readlines()
+#             file.close()
+#             for i, item in enumerate(todos, 1):
+#                 row = f"{i}.{item}"
+#                 print(row)
+#         case 'edit':
+#             todo_number = int(input("Enter the number of todo: "))
+#             updated_todo = input("Enter the new todo: ")
+#             todos[todo_number-1] = updated_todo
+#         case 'complete':
+#             todo_num_comp = int(input("Number of completed todo: "))
+#             todos.pop(todo_num_comp - 1)
+#             print(f"Todo number {todo_num_comp} deleted!")
+#         case 'exit':
+#             break
+#
+# print("bye!")
+
+# ################ DAY 7
 
 while True:
     user_action = input("Type add, show, edit, complete or exit: ")
@@ -189,7 +225,17 @@ while True:
             file = open('files/todos.txt', 'r')
             todos = file.readlines()
             file.close()
+
+            # new_todos = []
+            #
+            # for item in todos:
+            #     new_item = item.strip('\n')
+            #     new_todos.append(new_item)
+
+            # new_todos = [item.strip('\n') for item in todos]
+
             for i, item in enumerate(todos, 1):
+                item = item.strip('\n')
                 row = f"{i}.{item}"
                 print(row)
         case 'edit':
@@ -204,9 +250,6 @@ while True:
             break
 
 print("bye!")
-
-
-
 
 
 
