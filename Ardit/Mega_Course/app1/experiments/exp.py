@@ -41,3 +41,11 @@
 # for index, item in enumerate(waiting_list, 1):
 #     print(f"{index}.{item.capitalize()}")
 
+# ---------------
+
+# contents = ["a", "b", "c"]
+# filenames = ["1.txt", "2.txt", "3.txt"]
+#
+# for content, filename in zip(contents, filenames):
+#     file = open(f"../files/{filename}", 'w')
+#     file.write(content)

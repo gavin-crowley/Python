@@ -163,10 +163,10 @@
 
 # ----------
 
-# Day 5
+# Day 5 / 6
 
-todos = ['clean', 'cook', 'wash']
-# todos = []
+# todos = ['clean', 'cook', 'wash']
+todos = []
 
 while True:
     user_action = input("Type add, show, edit, complete or exit: ")
@@ -174,11 +174,24 @@ while True:
 
     match user_action:
         case 'add':
-            todo = input("Enter a todo: ")
+            todo = input("Enter a todo: ") + '\n'
+
+            file = open('files/todos.txt', 'r')
+            todos = file.readlines()
+            file.close()
+
             todos.append(todo)
+
+            file = open('files/todos.txt', 'w')
+            file.writelines(todos)
+            file.close()
         case 'show':
+            file = open('files/todos.txt', 'r')
+            todos = file.readlines()
+            file.close()
             for i, item in enumerate(todos, 1):
-                print(f"{i}.{item}")
+                row = f"{i}.{item}"
+                print(row)
         case 'edit':
             todo_number = int(input("Enter the number of todo: "))
             updated_todo = input("Enter the new todo: ")
