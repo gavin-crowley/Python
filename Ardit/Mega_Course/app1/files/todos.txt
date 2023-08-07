@@ -1,4 +1,2 @@
 clean
 cook
-wash
-shower

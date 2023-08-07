@@ -95,6 +95,47 @@
 
 # --------------
 
+##################  DAY 8
+# heads = 0
+# tails = 0
+#
+# with open("throws.txt", 'w'):
+#     pass
+#
+# while True:
+#     throw = input("Throw the coin and enter head or tail here: ? ")
+#
+#     with open('throws.txt', 'r') as file:
+#         throws = file.readlines()
+#
+#     throws.append(throw + '\n')
+#
+#     with open('throws.txt', 'w') as file:
+#         file.writelines(throws)
+#
+#     if(throw == 'head'):
+#         heads += 1
+#     elif (throw == 'tail'):
+#         tails += 1
+#
+#
+#     print(f"Heads: {heads * 100/(heads + tails)}%")
+
+#------- bug fix
+#
+# with open("file.txt", 'r') as file:
+#     content = file.read()
+#     print(content.strip())
+#     print(len(content))
+
+
+
+
+
+
+
+
+
 
 
 
