@@ -253,7 +253,66 @@
 
 
 
-# ################ DAY 8
+# # ################ DAY 8
+# with open("files/todos.txt"):
+#     pass
+#
+# while True:
+#     user_action = input("Type add, show, edit, complete or exit: ")
+#     user_action = user_action.strip()
+#
+#     match user_action:
+#         case 'add':
+#             todo = input("Enter a todo: ") + '\n'
+#
+#             # file = open('files/todos.txt', 'r')
+#             # todos = file.readlines()
+#             # file.close()
+#
+#             with open('files/todos.txt', 'r') as file:
+#                 todos = file.readlines()
+#
+#             todos.append(todo)
+#
+#             with open('files/todos.txt', 'w') as file:
+#                 file.writelines(todos)
+#
+#         case 'show':
+#             with open('files/todos.txt', 'r') as file:
+#                 todos = file.readlines()
+#
+#             for i, item in enumerate(todos, 1):
+#                 item = item.strip('\n')
+#                 row = f"{i}.{item}"
+#                 print(row)
+#         case 'edit':
+#             with open('files/todos.txt', 'r') as file:
+#                 todos = file.readlines()
+#
+#             todo_number = int(input("Enter the number of todo: "))
+#             updated_todo = input("Enter the new todo: ")
+#             todos[todo_number-1] = updated_todo
+#
+#             with open('files/todos.txt', 'w') as file:
+#                 file.writelines(todos)
+#         case 'complete':
+#             with open('files/todos.txt', 'r') as file:
+#                 todos = file.readlines()
+#
+#             todo_to_remove = int(input("Number of completed todo: "))
+#             todos.pop(todo_to_remove - 1)
+#             print(f"Todo number {todo_to_remove} was removed!")
+#
+#             with open('files/todos.txt', 'w') as file:
+#                 file.writelines(todos)
+#         case 'exit':
+#             break
+#
+# print("bye!")
+
+
+
+# ################ DAY 9
 with open("files/todos.txt"):
     pass
 
@@ -264,10 +323,6 @@ while True:
     match user_action:
         case 'add':
             todo = input("Enter a todo: ") + '\n'
-
-            # file = open('files/todos.txt', 'r')
-            # todos = file.readlines()
-            # file.close()
 
             with open('files/todos.txt', 'r') as file:
                 todos = file.readlines()
@@ -309,7 +364,6 @@ while True:
             break
 
 print("bye!")
-
 
 
 
