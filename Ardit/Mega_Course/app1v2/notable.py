@@ -1,0 +1,5 @@
+
+
+
+str.capitalize()
+str.title()

@@ -10,5 +10,24 @@
 # # 3
 # my_list = ['a', 'b', 'c', 'd']
 
-my_answer = input("What is your answer?")
-answers = ['Yes', 'No', 'Yes', 'No', my_answer]
+# Day 2
+# 1
+# user_prompt = input("Enter name once: ")
+# print(user_prompt.capitalize())
+
+# 2
+# while True:
+#     user_prompt = input("Enter name once: ")
+#     print(user_prompt.capitalize())
+
+# 3
+# while True:
+#     user_prompt = input("Enter name once: ")
+#     print(user_prompt.capitalize())
+
+# countries = []
+#
+# while True:
+#     country = input("Enter the country: ")
+#     countries.append(country)
+#     print(countries)
