@@ -6,6 +6,8 @@ str.title()
 str.strip()
 str.replace('new', 'old')
 
+list.sort()
+
 
 #####################
 # match-case demo
@@ -46,4 +48,8 @@ print(ranking.index(user_name)+1)
 # replace item in list:
 list[1] = new
 
+#######
 
+for index, item in enumerate(todos):
+    print(f"{index + 1}.{item.capitalize()}")
+#######
