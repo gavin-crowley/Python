@@ -52,4 +52,36 @@ list[1] = new
 
 for index, item in enumerate(todos):
     print(f"{index + 1}.{item.capitalize()}")
+
+########
+
+    file = open('files/todos.txt', 'r')
+    todos = file.readlines()
+    file.close()
+
+    todos.append(todo)
+
+    file = open('files/todos.txt', 'w')
+    file.writelines(todos)
+    file.close()
+
 #######
+
+ # new_todos = []
+
+            # for item in todos:
+            #     new_item = item.strip('\n')
+            #     new_todos.append(new_item)
+
+            new_todos = [item.strip('\n') for item in todos]
+#######
+
+sum() #sum an interable
+
+#######
+
+#convert list ints to str
+temperatures = [10, 12, 14]
+temperatures = [str(i) + '\n' for i in temperatures]
+
+#########

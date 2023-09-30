@@ -83,6 +83,103 @@
 # user_index = int(input("Enter index number: "))
 # print(f"You chose {ips[user_index]}")
 
+# Day 6
+# contents = ['a', 'b', 'c']
+# filenames = ['1.txt', '2.txt', '3.txt']
+#
+# for index, filename in enumerate(filenames):
+#     file = open(filename, 'w')
+#     file.writelines(contents[index])
+#     file.close()
+
+# 1
+# file = open('../files/essay.txt', 'r')
+# output = file.read()
+# file.close()
+# print(output.title())
+
+# 2
+# file = open('../files/essay.txt', 'r')
+# output = file.read()
+# file.close()
+# print(len(output))
+# i = 0
+# for character in output:
+#     i = i + 1
+# print(i)
+
+# 3
+# user_input = input("Add a new member: ") + '\n'
+#
+# file = open('../files/members.txt', 'r')
+# output = file.readlines()
+# file.close()
+#
+# output.append(user_input)
+#
+# file = open('../files/members.txt', 'w')
+# file.writelines(output)
+# file.close()
+
+# 4
+# filenames = ['1.txt', '2.txt', '3.txt']
+#
+# for filename in filenames:
+#     file = open(filename, 'w')
+#     file.write('Hello')
+#     file.close()
+
+# 5
+
+# filenames = ['a', 'b', 'c']
+#
+# for filename in filenames:
+#     file = open(f'../files/{filename}.txt', 'r')
+#     output = file.read()
+#     file.close()
+#     print(output)
+
+
+# Day 7
+
+# filenames = ['1.doc', '1.report', '1.presentation']
+# # new_filenames = []
+# # for file in filenames:
+# #     output = f"{file.replace('.', '-')}.txt"
+# #     new_filenames.append(output)
+# #
+# new_filenames = [f"{file.replace('.', '-')}.txt" for file in filenames]
+# print(new_filenames)
+
+# 1
+# names = ["john smith", "jay santi", "eva kuki"]
+# new_names = [name.title() for name in names]
+# print(new_names)
+
+# 2
+# usernames = ["john 1990", "alberta1970", "magnola2000"]
+# num_chars = [len(user) for user in usernames]
+# print(num_chars)
+
+# 3
+# user_entries = ['10', '19.1', '20']
+# floats = [float(entry) for entry in user_entries]
+# print(floats)
+
+# 4
+# user_entries = ['10', '19.1', '20']
+# floats = [float(entry) for entry in user_entries]
+# print(sum(floats))
+
+
+
+
+
+
+
+
+
+
 
 
 
