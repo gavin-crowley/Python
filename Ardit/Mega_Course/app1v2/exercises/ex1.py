@@ -171,6 +171,41 @@
 # floats = [float(entry) for entry in user_entries]
 # print(sum(floats))
 
+# Day 8
+# Bonus
+# date = input("Enter today's date: ")
+# # mood = input("How do you rate your mood? ")
+# thoughts = input("Let your thoughts flow: ")
+#
+# contents = []
+#
+# with open(f'../files/journal/{date}.txt', 'w') as file:
+#     contents.append(thoughts)
+#     file.writelines(contents)
+
+# 1
+
+heads = 0.0
+tails = 0.0
+counter = 0
+while True:
+    user_input = input("Throw the coin and enter head or tail here: ? ")
+
+    with open('guess.txt', 'w') as file:
+        file.write(user_input)
+
+    match user_input:
+        case 'tail':
+            tails += 1.0
+            counter += 1
+            print(f"Heads: {heads/counter*100}%")
+        case 'head':
+            counter += 1
+            heads += 1.0
+            print(f"Heads: {heads/counter*100}%")
+        case 'exit':
+            break
+
 
 
 
